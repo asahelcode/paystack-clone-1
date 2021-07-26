@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --primary-color: #011b33;
+  --color1: #0ba4db;
+  --color2: #3bb75e;
+  --color3: #f1fef4;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--primary-color);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn-lg {
+  background-color: var(--color2);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.btn-lg.lgr {
+  padding: 1rem 2rem;
+}
+
+.btn-lg:hover {
+  background-color: #41aa5e;
+  color: white;
+  transition: all 0.2s ease-in;
+}
+
+/* green link */
+
+.link-green {
+  text-decoration: none;
+}
+
+.link-green:hover .caret-circle {
+  background-color: var(--color2);
+}
+.link-green:hover .caret-circle i {
+  color: white;
+}
+
+.link-green-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.link-green-text {
+  color: var(--color2);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.caret-circle {
+  color: var(--color2);
+  border: 2px solid var(--color2);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caret-circle i {
+  color: var(--color2);
+  font-size: 14px;
+}
+
+/* list */
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  gap: 0.6rem;
+  margin: 1.5rem 0 2rem;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.list.b {
+  grid-template-columns: 1fr;
+}
+
+.list:nth-child(3) > li {
+  display: flex;
+}
+
+/* check mark */
+.fa-check {
+  color: var(--color2);
+  background-color: var(--color3);
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* media queries */
+@media screen and (max-width: 1169px) {
+  .not-responsive {
+    display: block;
+  }
+  body {
+    overflow-y: hidden;
+  }
+}

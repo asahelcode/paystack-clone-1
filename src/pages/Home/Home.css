@@ -1,0 +1,418 @@
+.intro {
+  background: var(--color3) url("/src/assets/map.svg") no-repeat 310px -130px;
+  height: 640px;
+  position: relative;
+}
+
+.intro-main {
+  width: 600px;
+  padding: 1rem 3rem;
+  position: absolute;
+  top: 120px;
+  left: 40px;
+}
+
+.intro-main h1 {
+  font-size: 2.4rem;
+}
+
+.intro-main p {
+  margin: 0.5rem 0 1.5rem;
+  font-size: 1.2rem;
+  line-height: 2em;
+}
+
+.intro-bottom {
+  position: absolute;
+  bottom: 1.2rem;
+  width: 100%;
+}
+
+.intro-bottom-a {
+  position: absolute;
+  left: 4rem;
+  bottom: 1.5rem;
+}
+.intro-bottom-b {
+  position: absolute;
+  right: 4rem;
+  bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.intro-bottom-b-text {
+  width: 380px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.intro-bottom-a-logos {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+  margin-top: 1rem;
+}
+
+.intro-bottom-a-logos img {
+  width: 120px;
+}
+
+#bolt {
+  width: 50px;
+}
+
+#mtn {
+  width: 70px;
+}
+#axa {
+  width: 150px;
+}
+
+.play-btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #0ba4db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-btn i {
+  color: white;
+  font-size: 0.6rem;
+}
+
+.features {
+  padding: 4rem;
+}
+
+.features-text {
+  margin-top: 3rem;
+}
+
+.features-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.features-text p {
+  font-size: 1.2rem;
+}
+
+.features-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  margin: 4rem 0 7rem;
+}
+
+.features-content-media img {
+  width: 100%;
+}
+
+.features-content-media video {
+  width: 100%;
+}
+
+.features-content-text {
+  padding: 0 3rem;
+}
+
+.features-content-text h1 {
+  font-size: 2.2rem;
+}
+
+.features-content-text p {
+  line-height: 2em;
+  margin: 1rem 0 3rem;
+  font-size: 1rem;
+}
+
+.features-content:nth-child(3) > div:nth-child(1) {
+  order: 2;
+}
+
+/* trusted */
+.trusted {
+  width: 100%;
+  height: 700px;
+  margin-bottom: 3rem;
+  background: #eaf6fc;
+  position: relative;
+}
+
+.trusted::before {
+  content: "";
+  background: url("/src/assets/checked-pattern-blue.png") no-repeat center
+    center/cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0.06;
+}
+
+.trusted-content {
+  padding: 4rem 3rem 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.trusted-content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.trusted-content > p {
+  width: 550px;
+  font-size: 1.2rem;
+}
+
+.trusted-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 6px 0px;
+  border-radius: 6px;
+}
+
+.trusted-cards > div {
+  width: 382px;
+  height: 389px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 6px 0px;
+  border-radius: 6px;
+  padding: 2rem 2.2rem;
+}
+
+.trusted-cards > div img {
+  width: 120px;
+}
+
+.trusted-cards > div h1 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.trusted-cards > div p {
+  font-size: 0.9rem;
+  line-height: 1.5em;
+  margin-bottom: 2rem;
+}
+
+.learnmore {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.learnmore span {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.learnmore:hover .caret-circle {
+  background-color: var(--color2);
+  color: white;
+}
+.learnmore:hover .caret-circle i {
+  color: white;
+}
+
+.powering {
+  height: 600px;
+  background-color: white;
+  padding: 6rem 3rem;
+  margin-bottom: 4rem;
+}
+
+.powering-text {
+  width: 550px;
+}
+
+.powering-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.powering-text p {
+  font-size: 1.1rem;
+  line-height: 1.5em;
+}
+
+.powering-logos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.powering-logos img {
+  width: 120px;
+}
+
+#fh,
+#iair,
+#bw,
+#ar,
+#gigm,
+#iroko,
+#smile {
+  width: 85px;
+}
+
+.backedby {
+  height: 720px;
+  background-color: #f9fbfc;
+  padding: 6rem 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.backedby::before {
+  content: "";
+  background: url("/src/assets/circular-pattern.png") no-repeat center
+    center/cover;
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: 10px;
+  right: -100px;
+  opacity: 0.2;
+}
+
+.backedby-content {
+  position: absolute;
+}
+
+.backedby-text {
+  width: 550px;
+}
+
+.backedby-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.backedby-text p {
+  font-size: 1.1rem;
+  line-height: 1.5em;
+}
+
+.backedby-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 3.5rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 6px 0px;
+  border-radius: 6px;
+}
+
+.backedby-cards > div {
+  width: 382px;
+  height: 340px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 6px 0px;
+  border-radius: 6px;
+  padding: 2rem 2.2rem;
+}
+
+.backedby-cards > div img {
+  width: 70px;
+}
+
+.backedby-cards > div > p {
+  font-size: 0.9rem;
+  line-height: 2em;
+  margin: 2rem 0;
+}
+
+#yc {
+  width: 30px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.person-text h2 {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+.person-text p {
+  font-size: 13px;
+}
+
+.person-text {
+  flex: 2;
+}
+
+.person-image.patrick {
+  width: 50px;
+  height: 50px;
+  background: url("/src/assets/patrick-collison-headshot.jpg") no-repeat center
+    center/cover;
+  border-radius: 50%;
+}
+.person-image.otto {
+  width: 50px;
+  height: 50px;
+  background: url("/src/assets/otto-williams.jpeg") no-repeat center
+    center/cover;
+  border-radius: 50%;
+}
+.person-image.michael {
+  width: 50px;
+  height: 50px;
+  background: url("/src/assets/michael-siebel-headshot.jpeg") no-repeat center
+    center/cover;
+  border-radius: 50%;
+}
+
+.try {
+  height: 300px;
+  position: relative;
+}
+
+.try::before {
+  background: url("/src/assets/curved-pattern.png") no-repeat;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  opacity: 0.2;
+}
+
+.try-content {
+  display: grid;
+  grid-template-columns: 60% auto;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  padding: 3rem 4rem;
+}
+
+.try-left {
+  padding-right: 2rem;
+}
+
+.try-left h1 {
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+.try-left p {
+  font-size: 1.3rem;
+}

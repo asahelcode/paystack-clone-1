@@ -1,0 +1,154 @@
+nav {
+  display: flex;
+  background-color: var(--color3);
+  justify-content: space-between;
+  padding: 0 2.5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav > ul > li {
+  padding: 1rem 0.4rem;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav > ul > li:hover > a:not(.btn-lg),
+nav > ul > li:hover i {
+  color: var(--color1);
+}
+
+nav > ul > li:hover .dd_left {
+  display: grid;
+}
+nav > ul > li:hover .dd_right {
+  display: flex;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[alt="nigeria logo"],
+.flags img {
+  width: 16px;
+  height: 13px;
+}
+
+.flags {
+  right: 45px;
+}
+
+.flags img {
+  margin-right: 10px;
+}
+
+[alt="paystack logo"] {
+  width: 123px;
+}
+
+/* dropdown */
+.dd_left {
+  display: none;
+  grid-template-columns: 60% auto;
+  width: 546px;
+  height: 317px;
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+  border: solid 1px rgba(177, 176, 176, 0.04);
+  box-shadow: 0 6px 13px 0 rgb(3 49 86 / 5%);
+  border-radius: 6px;
+}
+
+.dd_left > li:nth-child(1) > div {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 1rem;
+}
+.dd_left > li:nth-child(2) > div {
+  width: 100%;
+  height: 100%;
+  background-color: #f9fbfc;
+  padding: 1rem 2rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+
+.item:hover h1 {
+  color: #0ba4db;
+}
+
+.item-icon img {
+  width: 50px;
+}
+
+.item-text h1 {
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.item-text p {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.paystack-for {
+  margin-top: 1.2rem;
+}
+
+.paystack-for ul {
+  list-style: none;
+  line-height: 2.3em;
+}
+
+.paystack-for h2 {
+  font-size: 14px;
+}
+.paystack-for h2:hover {
+  color: #0ba4db;
+}
+
+.paystack-for p {
+  font-size: 11px;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+/* dropdown right */
+.dd_right {
+  background-color: white;
+  width: 151px;
+  height: 124px;
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  line-height: 2em;
+  box-shadow: rgba(3, 49, 86, 0.08) 0px 8px 16px 0px;
+  border-radius: 6px;
+  padding: 0.6rem 1.1rem;
+}
+
+.dd_right a:hover {
+  color: var(--color1);
+}

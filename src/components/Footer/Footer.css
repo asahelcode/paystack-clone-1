@@ -1,0 +1,51 @@
+footer {
+  margin-top: 50px;
+}
+
+.footer-top,
+.footer-bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2.5rem 5rem;
+  gap: 2rem;
+}
+
+footer h2 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+footer li {
+  font-size: 15px;
+  line-height: 2em;
+}
+
+footer ul {
+  margin-top: 1rem;
+}
+
+footer a:hover {
+  color: var(--color1);
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 5px;
+}
+.social-icons i {
+  font-size: 1.6rem;
+  color: grey;
+}
+.social-icons i:hover {
+  color: var(--color1);
+  transition: all 0.2s ease-in-out;
+}
+
+.email a {
+  color: var(--color1);
+}
+.email a:hover {
+  color: blue;
+}

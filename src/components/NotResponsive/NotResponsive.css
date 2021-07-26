@@ -1,0 +1,29 @@
+.not-responsive {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: white;
+  display: none;
+}
+
+.nr-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nr-content img {
+  width: 100px;
+}
+
+.nr-content p {
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  margin: 1rem 0;
+}
