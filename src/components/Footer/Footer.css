@@ -49,3 +49,9 @@ footer a:hover {
 .email a:hover {
   color: blue;
 }
+
+.divider {
+  height: 1px;
+  background-color: #eceaea;
+  margin: 16px 5rem 10px;
+}

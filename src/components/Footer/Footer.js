@@ -148,6 +148,7 @@ const Footer = () => {
           </li>
         </ul>
       </section>
+      <div className="divider"></div>
       <section className="footer-bottom">
         <ul data-aos="fade-up" data-aos-delay="300">
           <li>
